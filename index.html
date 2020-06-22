@@ -12,6 +12,7 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
 	</head>
 	<body id="top">
 
@@ -26,25 +27,7 @@
 					UGRD Research Asst.
 				</h3>
 				</span>
-				<span> 
-					<ul class="actions">
-						<li><a href="assets/PDF/Resume.pdf" target="_blank" class="button">Résumé</a></li>
-					</ul>
-				</span>
-				<span> 
-					<ul class="actions">
-						<li><a href="https://www.linkedin.com/in/tjose5645/" target="_blank" class="button">LinkedIn</a></li>
-					</ul>
-				</span>
-				<span>
-				<ul class="icons">
-					<li><a href="https://www.youtube.com/channel/UCWViNILfgwENDmeuDRmKxhg?view_as=subscriber" target="_blank" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
-					<li><a href="https://github.com/tjose56451" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="https://joset.co" target="_blank" class="icon fa-pencil"><span class="label">JOSET</span></a></li>
-					<li><a href="https://instagram.com/from_josie" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="mailto:hi@jtorres.info" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-				</ul>
-			</span>
+				<!-- jQuery as dependency -->
 			</header>
 
 		<!-- Main -->
@@ -59,7 +42,6 @@
 							<tr>
 							  <td>Who am I?</td>
 							  <td>I love to read historical fiction, go on long walks, and learn languages.</td>
-
 							</tr>
 							<tr>
 							  <td>Professional Hobbies</td>
@@ -74,8 +56,18 @@
 										<li>Mandarin Chinese - Limited Working Proficiency</li>
 									</ul>
 								</td>
-							  </tr>
+							</tr>
 						  </table>
+						  <span>
+						  <ul class="actions">
+							<li><a href="assets/PDF/Resume.pdf" target="_blank" class="button">Résumé</a></li>
+						</ul>
+					</span>
+					<span>
+						<ul class="actions">
+							<li><a href="https://www.linkedin.com/in/tjose5645/" target="_blank" class="button">LinkedIn</a></li>
+						</ul>
+					</span>
 					</section>
 
 				<!-- Two -->
@@ -617,9 +609,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Footer -->
 			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.youtube.com/channel/UCWViNILfgwENDmeuDRmKxhg?view_as=subscriber" target="_blank" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+					<li><a href="https://github.com/tjose56451" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://joset.co" target="_blank" class="icon fa-pencil"><span class="label">JOSET</span></a></li>
+					<li><a href="https://instagram.com/from_josie" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="mailto:hi@jtorres.info" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
 				<ul class="copyright">
 					<li>&copy; Jose Israel Torres | <a href="https://pages.github.com/" target="_blank">Powered by GitHub Pages</a> &amp; <a href="https://unsplash.com" target="_blank">Unsplash</a></li>  
 				</ul>
+
 			</footer>
 
 		<!-- Scripts -->
@@ -629,6 +629,18 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="jquery.js"></script>
+			<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+			<script src="https://raw.githack.com/mburakerman/prognroll/master/src/prognroll.min.js"></script>
+			<script>
+				$(function() {
+ 					 $("body").prognroll({
+    				height: 5, // progress bar height
+    				color: "#619be2", // progress bar background color
+    				custom: false // if you make it true, you can add your custom div and see it's scroll progress on the page
+  						});
+					});
+			</script>
 
 	</body>
 </html>
